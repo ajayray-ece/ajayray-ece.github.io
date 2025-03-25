@@ -1,0 +1,732 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ajay Roy - Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" href="Ajay.jpg">
+</head>
+<body>
+    <!-- Loader -->
+    <div class="loader-wrapper">
+        <div class="loader">
+            <div class="loader-circle"></div>
+            <div class="loader-line-mask">
+                <div class="loader-line"></div>
+            </div>
+            <span class="loader-text">Loading...</span>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-content">
+            <a href="#" class="logo">Hello & Welcome ! </a>
+            <div class="nav-links">
+                <a href="#home" class="active">Home</a>
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#education">Education</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <div class="theme-toggle">
+                <input type="checkbox" id="toggle_checkbox">
+                <label for="toggle_checkbox">
+                    <div id="star">
+                        <div class="star" id="star-1">★</div>
+                        <div class="star" id="star-2">★</div>
+                    </div>
+                    <div id="moon"></div>
+                </label>
+            </div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1>Hi, I'm <span class="highlight">Ajay Kumar Ray</span></h1>
+                <p class="typing-text">I'm a <span class="typed-text"></span></p>
+                <div class="hero-buttons">
+                    <a href="#contact" class="cta-button primary">Reach me</a>
+                    <a href="/Assets/Ajay_RESUME (2).pdf" class="cta-button secondary" download>
+                        <i class="fas fa-download"></i> See My Resume
+                    </a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="/Assets/Ajay.jpg" alt="Profile Picture">
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="section-header">
+            <h2>About Me</h2>
+            <div class="section-line"></div>
+        </div>
+        <div class="about-content">
+            <div class="about-image">
+                <img src="/Assets/Ajay_2.jpg" alt="Ajay Kumar Ray">
+            </div>
+            <div class="about-text">
+                <h3>Hi all, I'm Ajay</h3>
+                <p>
+                    A dedicated <strong>Full-Stack Developer</strong> with strong problem-solving skills and a deep understanding of 
+                    <strong>Data Structures and Algorithms (DSA)</strong>.
+                </p>
+                <p>
+                    I specialize in building scalable, efficient, and user-friendly applications while ensuring optimized performance.
+                </p>
+                <p>
+                    With a background in <strong>Electronics and Communication Engineering</strong>, I have a strong analytical mindset, allowing me to tackle complex challenges effectively.
+                </p>
+                <p>
+                    As the <strong>President of the Electronics and Robotics Club</strong>, I actively contribute to fostering technical learning and innovation.
+                </p>
+                <p>
+                    Passionate about continuous learning, I am always exploring new technologies and refining my skills to develop impactful software solutions.
+                </p>
+                <div class="achievements-grid">
+                    <div class="achievement-item">
+                        <i class="fas fa-code-branch"></i>
+                        <div class="achievement-content">
+                            <span class="achievement-number">15+</span>
+                            <span class="achievement-label">Projects Completed</span>
+                        </div>
+                    </div>
+                    <div class="achievement-item">
+                        <i class="fas fa-trophy"></i>
+                        <div class="achievement-content">
+                            <span class="achievement-number">2+</span>
+                            <span class="achievement-label">Hackathon Finalist</span>
+                        </div>
+                    </div>
+                    <div class="achievement-item">
+                        <i class="fas fa-award"></i>
+                        <div class="achievement-content">
+                            <span class="achievement-number">3+</span>
+                            <span class="achievement-label">Awards Received</span>
+                        </div>
+                    </div>
+                    <div class="achievement-item">
+                        <i class="fas fa-industry"></i>
+                        <div class="achievement-content">
+                            <span class="achievement-number">1+</span>
+                            <span class="achievement-label">Industrial Visit</span>
+                        </div>
+                    </div>
+                    <div class="achievement-item">
+                        <i class="fas fa-laptop-code"></i>
+                        <div class="achievement-content">
+                            <span class="achievement-number">2+</span>
+                            <span class="achievement-label">Internships</span>
+                        </div>
+                    </div>
+                    <div class="achievement-item">
+                        <i class="fas fa-chalkboard-teacher"></i>
+                        <div class="achievement-content">
+                            <span class="achievement-number">15+</span>
+                            <span class="achievement-label">Workshops</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="section-header">
+            <h2>My Skills</h2>
+            <div class="section-line"></div>
+        </div>
+        <div class="skills-container">
+            <div class="skills-tabs">
+                <button class="tab-btn active" data-tab="all">All</button>
+                <button class="tab-btn" data-tab="frontend">Frontend</button>
+                <button class="tab-btn" data-tab="backend">Backend</button>
+                <button class="tab-btn" data-tab="design">Design</button>
+                <button class="tab-btn" data-tab="tools">Tools</button>
+            </div>
+            <div class="skills-content">
+                <div class="tab-content active" id="all">
+                    <div class="skills-grid">
+                        <div class="skill-card">
+                            <i class="fab fa-html5"></i>
+                            <h3>HTML5</h3>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-card">
+                            <i class="fab fa-css3-alt"></i>
+                            <h3>CSS3</h3>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-card">
+                            <i class="fab fa-js"></i>
+                            <h3>JavaScript</h3>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 80%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-card">
+                            <i class="fab fa-react"></i>
+                            <h3>React</h3>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 75%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-card">
+                            <img src="/Assets/TailwindCSS.png" alt="Tailwind CSS" class="skill-icon">
+                            <h3>Tailwind CSS</h3>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 80%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-card">
+                            <img src="/Assets/Bootstrap.png" alt="Bootstrap" class="skill-icon">
+                            <h3>Bootstrap</h3>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 80%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-card">
+                            <i class="fab fa-python"></i>
+                            <h3>Python</h3>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-card">
+                            <i class="fab fa-node-js"></i>
+                            <h3>Node.js</h3>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 80%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-card">
+                            <i class="fas fa-database"></i>
+                            <h3>MySQL</h3>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 75%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-card">
+                            <i class="fab fa-php"></i>
+                            <h3>PHP</h3>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 70%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-card">
+                            <i class="fab fa-figma"></i>
+                            <h3>Figma</h3>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-card">
+                            <i class="fas fa-pencil-ruler"></i>
+                            <h3>UI/UX</h3>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 80%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-card">
+                            <i class="fas fa-palette"></i>
+                            <h3>Web Design</h3>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-card">
+                            <img src="/Assets/MongoDb.png" alt="MongoDB" class="skill-icon">
+                            <h3>MongoDB</h3>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 80%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-card">
+                            <img src="/Assets/VSCode.png" alt="VS Code" class="skill-icon">
+                            <h3>VS Code</h3>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 95%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-card">
+                            <i class="fab fa-git-alt"></i>
+                            <h3>Git</h3>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-card">
+                            <i class="fa-brands fa-github"></i>
+                            <h3>GitHub</h3>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 95%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-card">
+                            <img src="/Assets/XD.png" alt="Adobe XD" class="skill-icon">
+                            <h3>Adobe XD</h3>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 75%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-content" id="frontend">
+                    <div class="skills-grid">
+                        <div class="skill-card">
+                            <i class="fab fa-html5"></i>
+                            <h3>HTML5</h3>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-card">
+                            <i class="fab fa-css3-alt"></i>
+                            <h3>CSS3</h3>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-card">
+                            <i class="fab fa-js"></i>
+                            <h3>JavaScript</h3>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 80%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-card">
+                            <i class="fab fa-react"></i>
+                            <h3>React</h3>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 75%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-card">
+                            <img src="/Assets/TailwindCSS.png" alt="MongoDB" class="skill-icon">
+                            <h3>Tailwind CSS</h3>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 80%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-card">
+                            <img src="/Assets/Bootstrap.png" alt="MongoDB" class="skill-icon">
+                            <h3>Bootstrap</h3>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 80%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-content" id="backend">
+                    <div class="skills-grid">
+                        <div class="skill-card">
+                            <i class="fab fa-python"></i>
+                            <h3>Python</h3>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-card">
+                            <i class="fab fa-node-js"></i>
+                            <h3>Node.js</h3>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 80%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-card">
+                            <i class="fas fa-database"></i>
+                            <h3>MySQL</h3>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 75%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-card">
+                            <img src="/Assets/MongoDb.png" alt="MongoDB" class="skill-icon">
+                            <h3>MongoDB</h3>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 80%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-card">
+                            <i class="fab fa-php"></i>
+                            <h3>PHP</h3>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 70%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-content" id="design">
+                    <div class="skills-grid">
+                        <div class="skill-card">
+                            <i class="fab fa-figma"></i>
+                            <h3>Figma</h3>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-card">
+                            <i class="fas fa-pencil-ruler"></i>
+                            <h3>UI/UX</h3>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 80%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-card">
+                            <i class="fas fa-palette"></i>
+                            <h3>Web Design</h3>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-card">
+                            <img src="/Assets/XD.png" alt="Adobe XD" class="skill-icon">
+                            <h3>Adobe XD</h3>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 75%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-content" id="tools">
+                    <div class="skills-grid">
+                        <div class="skill-card">
+                            <i class="fab fa-git-alt"></i>
+                            <h3>Git</h3>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-card">
+                            <i class="fa-brands fa-github"></i>
+                            <h3>GitHub</h3>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 95%"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-card">
+                            <img src="/Assets/VSCode.png" alt="VS Code" class="skill-icon">
+                            <h3>VS Code</h3>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 95%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-card">
+                            <img src="/Assets/XD.png" alt="Adobe XD" class="skill-icon">
+                            <h3>Adobe XD</h3>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 75%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <h2>My Projects</h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                <img src="/Assets/ECommerce.jpg" alt="Project 1">
+                <h3>E-Commerce Website</h3>
+                <p>A full-featured e-commerce platform with user authentication, product management, and payment integration.</p>
+                <div class="project-links">
+                    <a href="#" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+            <div class="project-card">
+                <img src="/Assets/Task_Management.jpg" alt="Project 2">
+                <h3>Task Management App</h3>
+                <p>A collaborative task management application with real-time updates and team collaboration features.</p>
+                <div class="project-links">
+                    <a href="#" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+            <div class="project-card">
+                <img src="/Assets/Weather_Dashboard.jpg" alt="Project 3">
+                <h3>Weather Dashboard</h3>
+                <p>An interactive weather dashboard showing real-time weather data and forecasts using OpenWeather API.</p>
+                <div class="project-links">
+                    <a href="#" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+            <div class="project-card">
+                <img src="/Assets/Screenshot 2025-03-25 155250.png" alt="Project 4">
+                <h3>Portfolio Website</h3>
+                <p>A modern and responsive portfolio website showcasing projects, skills, and professional experience.</p>
+                <div class="project-links">
+                    <a href="#" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+            <div class="project-card">
+                <img src="/Assets/Chat_Appl.png" alt="Project 5">
+                <h3>Chat Application</h3>
+                <p>A real-time chat application with user authentication, message history, and file sharing capabilities.</p>
+                <div class="project-links">
+                    <a href="#" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+            <div class="project-card">
+                <img src="/Assets/recipe_finder.jpg" alt="Project 6">
+                <h3>Recipe Finder</h3>
+                <p>A recipe search application with filtering options, detailed instructions, and nutritional information.</p>
+                <div class="project-links">
+                    <a href="#" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="education">
+        <div class="section-header">
+            <h2>Education</h2>
+            <div class="section-line"></div>
+        </div>
+        <div class="education-timeline">
+            <div class="education-card">
+                <div class="education-icon">
+                    <i class="fas fa-graduation-cap"></i>
+                </div>
+                <div class="education-content">
+                    <h3>Bachelor of Technology</h3>
+                    <p class="education-school">Central University Of Jammu</p>
+                    <p class="education-year">2022 - 2026</p>
+                    <p class="education-grade">CGPA : 8.84/10</p>
+                    <p class="education-description">Electronics and Communication Engineering</p>
+                </div>
+            </div>
+            <div class="education-card">
+                <div class="education-icon">
+                    <i class="fas fa-school"></i>
+                </div>
+                <div class="education-content">
+                    <h3>Higher Secondary (12th)</h3>
+                    <p class="education-school">Jagdish Nandan College</p>
+                    <p class="education-year">2019 - 2021</p>
+                    <p class="education-grade">Percentage: 75.6%</p>
+                    <p class="education-description">Science Stream (PCM)</p>
+                    <p>BSEB Board</p>
+                </div>
+            </div>
+            <div class="education-card">
+                <div class="education-icon">
+                    <i class="fas fa-school"></i>
+                </div>
+                <div class="education-content">
+                    <h3>Secondary School (10th)</h3>
+                    <p class="education-school">MKU Vidyalaya</p>
+                    <p class="education-year">2018 - 2019</p>
+                    <p class="education-grade">Percentage: 63.4%</p>
+                    <p class="education-description">BSEB Board</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Coding Profiles Section -->
+    <section id="coding-profiles" class="coding-profiles">
+        <div class="section-header">
+            <h2>Coding Profiles</h2>
+            <div class="section-line"></div>
+        </div>
+        <div class="profiles-container">
+            <div class="profile-card github">
+                <div class="profile-icon">
+                    <i class="fab fa-github"></i>
+                </div>
+                <h3>GitHub</h3>
+                <p class="profile-stats">
+                    <span class="stat">
+                        <i class="fas fa-code-branch"></i>
+                        10+ Repos
+                    </span>
+                    <span class="stat">
+                        <i class="fas fa-star"></i>
+                        NA
+                    </span>
+                </p>
+                <a href="https://github.com/ajayray-ece" target="_blank" class="profile-link">View Profile</a>
+            </div>
+
+            <div class="profile-card leetcode">
+                <div class="profile-icon">
+                    <img src="/Assets/LeetCode (2).png" alt="LeetCode" class="platform-logo">
+                </div>
+                <h3>LeetCode</h3>
+                <p class="profile-stats">
+                    <span class="stat">
+                        <i class="fas fa-check-circle"></i>
+                        60+ Problems
+                    </span>
+                    <span class="stat">
+                        <i class="fas fa-trophy"></i>
+                        Contest Rating: NA
+                    </span>
+                </p>
+                <a href="https://leetcode.com/u/rayajayk123/" target="_blank" class="profile-link">View Profile</a>
+            </div>
+
+            <div class="profile-card codechef">
+                <div class="profile-icon">
+                    <img src="/Assets/Code_Chef.png" alt="CodeChef" class="platform-logo">
+                </div>
+                <h3>CodeChef</h3>
+                <p class="profile-stats">
+                    <span class="stat">
+                        <i class="fas fa-star"></i>
+                        2★ Coder
+                    </span>
+                    <span class="stat">
+                        <i class="fas fa-trophy"></i>
+                        Max Rating: NA
+                    </span>
+                </p>
+                <a href="https://www.codechef.com/users/ajaykumarray" target="_blank" class="profile-link">View Profile</a>
+            </div>
+
+            <div class="profile-card hackerrank">
+                <div class="profile-icon">
+                    <i class="fab fa-hackerrank"></i>
+                </div>
+                <h3>HackerRank</h3>
+                <p class="profile-stats">
+                    <span class="stat">
+                        <i class="fas fa-certificate"></i>
+                        2★ Problem Solving
+                    </span>
+                    <span class="stat">
+                        <i class="fas fa-award"></i>
+                        NA
+                    </span>
+                </p>
+                <a href="https://www.hackerrank.com/profile/rayajayk" target="_blank" class="profile-link">View Profile</a>
+            </div>
+
+            <div class="profile-card">
+                <div class="profile-icon">
+                    <img src="/Assets/GFG.png" alt="GeeksForGeeks" class="platform-logo">
+                </div>
+                <h3>GeeksForGeeks</h3>
+                <div class="profile-stats">
+                    <div class="stat">
+                        <i class="fas fa-crown"></i>
+                        <span>Institute Rank 50</span>
+                    </div>
+                    <div class="stat">
+                        <i class="fas fa-check-circle"></i>
+                        <span>50+ Problems</span>
+                    </div>
+                </div>
+                <a href="https://www.geeksforgeeks.org/user/rayaj87ig/"  class="profile-link" target="_blank">View Profile</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2>Reach me</h2>
+        <div class="contact-container">
+            <form class="contact-form" action="https://formsubmit.co/rayajayk@gmail.com" method="POST">
+                <div class="form-group">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" name="email" placeholder="Your Email" required>
+                </div>
+                <div class="form-group">
+                    <textarea name="message" placeholder="Your Message" required></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Let's Collaborate</h3>
+                <p>If you're looking for a dedicated Full-Stack Developer with strong problem-solving skills, I'm open to exciting opportunities. Let's work together to create innovative and impactful solutions!</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul class="footer-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>CONTACT INFO</h3>
+                <div class="contact-info">
+                    <a href="mailto:rayajayk@gmail.com" class="contact-info-item">
+                        <i class="fas fa-envelope"></i>
+                        <div class="contact-info-text">
+                            <span>Email</span>
+                            rayajayk@gmail.com
+                        </div>
+                    </a>
+                    <a href="tel:+91 9693984515" class="contact-info-item">
+                        <i class="fas fa-phone"></i>
+                        <div class="contact-info-text">
+                            <span>Phone</span>
+                            +91 9693984515 
+                        </div>
+                    </a>
+                    <a href="https://maps.google.com/?q=Your+Location" target="_blank" class="contact-info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div class="contact-info-text">
+                            <span>Location</span>
+                            Jammu , J&K
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="social-links">
+            <a href="#"><i class="fab fa-github"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Ajay Kumar Ray. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 
