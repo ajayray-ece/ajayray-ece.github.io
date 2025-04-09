@@ -514,4 +514,6 @@ function isElementInViewport(el) {
         rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
         rect.right <= (window.innerWidth || document.documentElement.clientWidth)
     );
-} 
+}
+
+// Remove all marksheet modal related functions 
