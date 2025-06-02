@@ -1,6 +1,6 @@
 // Typing Animation
 const typedTextSpan = document.querySelector('.typed-text');
-const texts = ['Web Developer', 'UI/UX Designer', 'Freelancer', 'Problem Solver', 'AI Developer', 'VLSI Engineer','Robotics Enthusiast', 'ECE Engineer','Top 5% in Department'];
+const texts = ['Web Developer', 'UI/UX Designer', 'Freelancer', 'Problem Solver', 'VLSI Engineer','Robotics Enthusiast','Top 5% in Department'];
 let textIndex = 0;
 let charIndex = 0;
 let isDeleting = false;
@@ -431,7 +431,7 @@ window.addEventListener('scroll', () => {
 
 // Update existing observerOptions
 observerOptions.rootMargin = '0px';
-observerOptions.threshold = 0.15;
+observerOptions.threshold = 0.05;
 
 // Create new scroll animation observer
 const sectionAnimationObserver = new IntersectionObserver((entries) => {
