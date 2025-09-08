@@ -629,6 +629,7 @@ section:hover {
 .experience-card:nth-child(2) { animation-delay: 0.2s; }
 .experience-card:nth-child(3) { animation-delay: 0.3s; }
 .experience-card:nth-child(4) { animation-delay: 0.4s; }
+.experience-card:nth-child(5) { animation-delay: 0.5s; }
 
 .experience-card::before {
     content: '';
