@@ -389,7 +389,7 @@ section:hover {
     margin: 0 auto;
 }
 
-.about-image::after {
+.photo-slider::after {
     content: '';
     position: absolute;
     inset: 0;
