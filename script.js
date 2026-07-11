@@ -1,6 +1,6 @@
 // Typing Animation
 const typedTextSpan = document.querySelector('.typed-text');
-const texts = ['Web Developer', 'UI/UX Designer', 'Freelancer', 'Problem Solver', 'VLSI Engineer','Robotics Enthusiast','Top 5% in Department'];
+const texts = ['Web Developer', 'Electronics Engineer', 'Communication Engineer',  'UI/UX Designer', 'Freelancer', 'Problem Solver', 'VLSI Engineer','Robotics Enthusiast','Top 5% in Department'];
 let textIndex = 0;
 let charIndex = 0;
 let isDeleting = false;
